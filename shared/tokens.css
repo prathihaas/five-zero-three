@@ -66,3 +66,67 @@ body {
 .stack { display: flex; flex-direction: column; }
 .row { display: flex; flex-direction: row; }
 .center { display: flex; align-items: center; justify-content: center; }
+
+/* Responsive — override inline JSX styles with !important */
+@media (max-width: 900px) {
+  html, body { overflow-x: hidden; }
+
+  /* Collapse hero/story/visit two-column grids to single column */
+  section > div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  /* Reduce section side padding */
+  section[style*="padding"] {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  /* Header inner wrapper side padding */
+  header > div[style*="padding"] {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Hide nav text links, keep logo + order button */
+  header nav {
+    display: none !important;
+  }
+
+  /* Hero h1 — scale down the very large font */
+  section h1[style*="font-size: 88px"] {
+    font-size: clamp(44px, 12vw, 72px) !important;
+    line-height: 1.05 !important;
+  }
+  section h1[style*="font-size: 88px"] span {
+    font-size: clamp(36px, 10vw, 60px) !important;
+  }
+
+  /* Story / Visit h2 */
+  h2[style*="font-size: 64px"] {
+    font-size: clamp(36px, 10vw, 56px) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Ensure single column on small phones */
+  section > div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  /* Tighten section top/bottom padding too */
+  section[style*="padding: 100px"] {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+  section[style*="padding: 80px"] {
+    padding-top: 52px !important;
+    padding-bottom: 52px !important;
+  }
+  section[style*="padding: '60px"] {
+    padding-top: 40px !important;
+    padding-bottom: 52px !important;
+  }
+}
