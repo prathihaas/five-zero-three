@@ -3,124 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Five Zero Three · Brand System</title>
+<title>Five Zero Three · Nizamabad</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Black&family=Caveat:wght@400;500;600;700&family=Bungee&family=Rubik+Mono+One&family=JetBrains+Mono:wght@400;500;700&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared/tokens.css?v=2">
-<style>
-  body { padding: 64px 28px; min-height: 100vh; }
-  .hub { max-width: 1100px; margin: 0 auto; }
-  .card {
-    background: var(--cream-light);
-    border: 2.5px solid var(--ink);
-    border-radius: 18px 22px 16px 20px;
-    padding: 28px;
-    text-decoration: none; color: var(--ink);
-    display: flex; flex-direction: column;
-    gap: 14px;
-    transition: transform 0.15s, box-shadow 0.15s;
-    min-height: 240px;
-    position: relative;
-    overflow: hidden;
-  }
-  .card:hover { transform: translate(-3px, -3px); box-shadow: 6px 6px 0 var(--ink); }
-  .card-kicker {
-    font-family: var(--font-mono); font-size: 10px;
-    letter-spacing: 0.2em; text-transform: uppercase;
-    color: var(--ink-muted);
-  }
-  .card-title { font-family: var(--font-hand-bold); font-size: 34px; line-height: 0.95; }
-  .card-desc { font-family: var(--font-body); font-size: 14px; color: var(--ink-soft); line-height: 1.5; }
-  .card-cta {
-    margin-top: auto; padding-top: 14px;
-    border-top: 1.5px dashed var(--ink);
-    font-family: var(--font-body); font-weight: 700; font-size: 13px;
-    text-transform: uppercase; letter-spacing: 0.08em;
-    display: flex; justify-content: space-between; align-items: center;
-  }
-</style>
 </head>
-<body class="paper">
-<div class="hub">
-
-  <!-- Header -->
-  <div style="text-align: center; margin-bottom: 56px;">
-    <div id="hero" style="display: flex; justify-content: center; margin-bottom: 20px;"></div>
-    <div style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase;">
-      Brand System · Nizamabad · 2026
-    </div>
-    <div style="font-family: var(--font-hand); font-size: 32px; margin-top: 14px; color: var(--ink-soft); transform: rotate(-0.5deg);">
-      A small cafe on Level 1. A whole world around it.
-    </div>
-  </div>
-
-  <!-- Grid -->
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-
-    <a href="Website.html" class="card" style="grid-column: span 2; min-height: 280px; background: var(--ink); color: var(--cream-light); border-color: var(--ink);">
-      <div class="card-kicker" style="color: rgba(250,245,234,0.7);">01 · Primary deliverable</div>
-      <div class="card-title" style="font-size: 56px;">Website + Ordering.</div>
-      <div class="card-desc" style="color: rgba(250,245,234,0.8); font-size: 15px; max-width: 580px;">
-        Full home page, menu browser, cart drawer. Dine-in (with table number), takeaway, and delivery flows — all wired end to end.
-      </div>
-      <div style="position: absolute; bottom: 24px; right: 28px; opacity: 0.9;">
-        <div id="m1"></div>
-      </div>
-      <div class="card-cta" style="border-top-color: rgba(250,245,234,0.3); max-width: 580px;">
-        <span>Open site →</span>
-        <span style="font-family: var(--font-mono); opacity: 0.6;">fivezerothree.cafe</span>
-      </div>
-    </a>
-
-    <a href="Menu.html" class="card">
-      <div class="card-kicker">02 · Printed</div>
-      <div class="card-title">Clipboard Menu.</div>
-      <div class="card-desc">The in-hand paper menu. Two-column, hand-drawn header, doodle-scattered margins. Mirrors the reference.</div>
-      <div class="card-cta"><span>View menu →</span><span style="font-family: var(--font-mono); opacity: 0.6;">A4</span></div>
-    </a>
-
-    <a href="Social Templates.html" class="card">
-      <div class="card-kicker">03 · Digital</div>
-      <div class="card-title">Social Stories.</div>
-      <div class="card-desc">Seven 9:16 templates: drink launch, daily combo, vibe quote, behind-the-scenes, testimonial, hours, event.</div>
-      <div class="card-cta"><span>View templates →</span><span style="font-family: var(--font-mono); opacity: 0.6;">9:16 × 7</span></div>
-    </a>
-
-    <a href="In-Store Branding.html" class="card">
-      <div class="card-kicker">04 · Physical</div>
-      <div class="card-title">In-Store<br/>Branding.</div>
-      <div class="card-desc">Wall menu board, window decal, kraft cup sleeves, hiring poster, tip jar QR, wayfinding signs.</div>
-      <div class="card-cta"><span>View artifacts →</span><span style="font-family: var(--font-mono); opacity: 0.6;">6 items</span></div>
-    </a>
-
-    <a href="Design System.html" class="card">
-      <div class="card-kicker">05 · Foundation</div>
-      <div class="card-title">Design System.</div>
-      <div class="card-desc">Logo lockups, palette, typography, doodle library, voice & copy guardrails. The source of truth.</div>
-      <div class="card-cta"><span>Open spec →</span><span style="font-family: var(--font-mono); opacity: 0.6;">v1.0</span></div>
-    </a>
-  </div>
-
-  <!-- Legend -->
-  <div style="margin-top: 56px; padding-top: 28px; border-top: 2px solid var(--ink); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
-    <div style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-muted);">
-      Built from the reference · 5 deliverables · monochrome · hand-drawn
-    </div>
-    <div style="font-family: var(--font-hand); font-size: 22px; color: var(--ink-soft);">
-      కాఫీ రెడీ. ☕
-    </div>
-  </div>
-
-</div>
+<body>
+<div id="root"></div>
 
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
 <script type="text/babel" src="shared/doodles.jsx"></script>
-<script type="text/babel">
-ReactDOM.createRoot(document.getElementById('hero')).render(<LogoLockup size={1.8}/>);
-ReactDOM.createRoot(document.getElementById('m1')).render(<Mascot size={100} stroke="var(--cream-light)"/>);
-</script>
+<script type="text/babel" src="shared/menu-data.jsx"></script>
+<script type="text/babel" src="shared/site-header.jsx"></script>
+<script type="text/babel" src="shared/menu-browser.jsx"></script>
+<script type="text/babel" src="shared/cart-drawer.jsx"></script>
+<script type="text/babel" src="shared/site-sections.jsx"></script>
+<script type="text/babel" src="shared/website-app.jsx"></script>
 </body>
 </html>
