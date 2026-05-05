@@ -132,6 +132,26 @@ const VisitSection = () => (
 
 const SiteFooter = () => (
   <footer style={{padding: '40px 28px', background: 'var(--cream)', borderTop: '2.5px solid var(--ink)'}}>
+    {/* Sister properties */}
+    <div style={{maxWidth: 1280, margin: '0 auto', borderBottom: '1.5px dashed rgba(26,22,18,0.25)', paddingBottom: 24, marginBottom: 28}}>
+      <div style={{fontFamily: 'var(--font-mono)', fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--ink-muted)', marginBottom: 12}}>
+        Part of Hotel Amara · Nizamabad
+      </div>
+      <div style={{display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center'}}>
+        <a href="https://amara-hotel.vercel.app" target="_blank" rel="noopener"
+          style={{fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: 13, color: 'var(--ink)',
+            textDecoration: 'none', border: '2px solid var(--ink)', padding: '8px 16px',
+            borderRadius: '12px 16px 10px 14px', display: 'inline-flex', alignItems: 'center', gap: 6}}>
+          Hotel Amara <Arrow w={16} stroke="var(--ink)"/>
+        </a>
+        <a href="https://telugu-theory.vercel.app" target="_blank" rel="noopener"
+          style={{fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: 13, color: 'var(--ink)',
+            textDecoration: 'none', border: '2px solid var(--ink)', padding: '8px 16px',
+            borderRadius: '12px 16px 10px 14px', display: 'inline-flex', alignItems: 'center', gap: 6}}>
+          Telugu Theory · Level 2 <Arrow w={16} stroke="var(--ink)"/>
+        </a>
+      </div>
+    </div>
     <div style={{maxWidth: 1280, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 20}}>
       <div style={{display: 'flex', alignItems: 'center', gap: 12}}>
         <Mascot size={40}/>

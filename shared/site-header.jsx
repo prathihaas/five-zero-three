@@ -14,6 +14,23 @@ const SiteNav = ({ active = "home", onNav, cartCount = 0, onCart }) => {
       backdropFilter: 'blur(8px)',
       borderBottom: '2px solid var(--ink)',
     }}>
+      {/* Sister-property strip */}
+      <div style={{
+        background: 'var(--ink)', color: 'var(--cream-light)',
+        padding: '6px 28px', display: 'flex', alignItems: 'center', gap: 16,
+        fontFamily: 'var(--font-mono)', fontSize: 11,
+        textTransform: 'uppercase', letterSpacing: '0.14em',
+      }}>
+        <span style={{opacity: 0.55}}>Part of Hotel Amara · Nizamabad</span>
+        <a href="https://amara-hotel.vercel.app" target="_blank" rel="noopener"
+          style={{color: 'var(--cream-light)', textDecoration: 'none', opacity: 0.85, display: 'inline-flex', alignItems: 'center', gap: 4}}>
+          Hotel Amara <Arrow w={12} stroke="var(--cream-light)"/>
+        </a>
+        <a href="https://telugu-theory.vercel.app" target="_blank" rel="noopener"
+          style={{color: 'var(--cream-light)', textDecoration: 'none', opacity: 0.85, display: 'inline-flex', alignItems: 'center', gap: 4}}>
+          Telugu Theory · L2 <Arrow w={12} stroke="var(--cream-light)"/>
+        </a>
+      </div>
       <div style={{
         maxWidth: 1280, margin: '0 auto', padding: '14px 28px',
         display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 24
