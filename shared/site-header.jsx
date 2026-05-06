@@ -49,6 +49,10 @@ const SiteNav = ({ active = "home", onNav, cartCount = 0, onCart }) => {
               transition: 'border-color 0.2s'
             }}>{l.label}</a>
           ))}
+          <a href="blog/" style={{
+            color: 'var(--ink)', textDecoration: 'none',
+            borderBottom: '2.5px solid transparent', paddingBottom: 2,
+          }}>Blog</a>
         </nav>
         <button onClick={onCart} style={{
           background: 'var(--ink)', color: 'var(--cream-light)',
